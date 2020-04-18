@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.haivu.frogtutoring.Search"
+    android:padding="10dp"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:paddingTop="5dp"
+        android:id="@+id/imsearch"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/search"
+        android:layout_alignBottom="@+id/edtSearch" />
+
+    <TextView
+        android:id="@+id/tvfilter"
+        android:text="Filter"
+        android:paddingTop="20dp"
+        android:textColor="#05078c"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imsearch"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:paddingTop="20dp"
+        android:hint="Search for Tutor"
+        android:gravity="center"
+        android:textColor="#05078c"
+        android:id="@+id/edtSearch"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <Spinner
+        android:id="@+id/spfilter"
+        android:layout_width="wrap_content"
+        android:textColor="#05078c"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtSearch"></Spinner>
+
+    <ListView
+        android:id="@+id/listtutors"
+        android:paddingTop="10dp"
+        android:textColor="#05078c"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/spfilter" />
+
+
+</RelativeLayout>

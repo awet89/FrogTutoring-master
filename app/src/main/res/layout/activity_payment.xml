@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.haivu.frogtutoring.payment"
+    android:background="@drawable/background">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textSize="20dp"
+        android:textColor="#05078c"
+        android:text="Total Pay"
+        android:layout_below="@+id/textView34"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignStart="@+id/name" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#05078c"
+        android:text="Total"
+        android:layout_above="@+id/name"
+        android:layout_toRightOf="@+id/btnpaycancel"
+        android:layout_toEndOf="@+id/btnpaycancel" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:textColor="#05078c"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:id="@+id/editcard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#05078c"
+        android:paddingTop="15dp"
+        android:hint="Card Number"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/editcode"
+        android:layout_below="@+id/name"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignStart="@+id/name" />
+
+    <EditText
+        android:id="@+id/editcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:paddingTop="15dp"
+        android:hint="3-digit security code"
+        android:inputType="number"
+        android:textColor="#05078c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_below="@+id/editcard"
+        android:layout_alignLeft="@+id/editcard"
+        android:layout_alignStart="@+id/editcard" />
+
+    <Button
+        android:id="@+id/btnpaycancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textColor="#05078c"
+        android:layout_alignBaseline="@+id/btnpay"
+        android:layout_alignBottom="@+id/btnpay"
+        android:layout_alignLeft="@+id/editcode"
+        android:layout_alignStart="@+id/editcode" />
+    <Button
+        android:id="@+id/btnpay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pay"
+        android:textColor="#05078c"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/editcode"
+        android:layout_alignRight="@+id/editcode"
+        android:layout_alignEnd="@+id/editcode" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:textSize="30dp"
+        android:textColor="#05078c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="Card Payment" />
+</RelativeLayout>
